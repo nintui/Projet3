@@ -1,0 +1,1442 @@
+@font-face{
+    font-family: "Roboto";
+    src:url(/typo/Roboto-Light.ttf);}
+@font-face{
+    font-family: "Roboto-Bold";
+    src:url(typo/Roboto-Bold.ttf);
+}
+@font-face{
+    font-family: "Roboto-Light";
+    src:url(typo/Roboto-Light.ttf);   
+}
+@font-face {
+    font-family: "Shrikhand";  
+    src: url(/typo/Shrikhand-Regular.ttf);
+
+}
+/*-----balises génériques---*/
+body, html{
+  margin:0px;
+    font-family: Roboto, sans-serif;
+    scroll-behavior: smooth;
+}
+/*----
+img{
+    width: 210px;
+    border-radius: 20px 20px 0px 0px;
+}
+p, a{
+    text-decoration: none;
+}
+.flexCenter{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexMargeLeft{
+ background-color: green;
+}
+.height{
+   height: 100px
+}
+/*===========Accueil===============*/
+/*----------header-----------------------------------------*/
+.en_tete{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    height: auto;
+    padding: 30px;
+    text-align: center;
+}
+header{
+ position: relative;
+ padding: 60px;
+
+}
+.logo{
+
+  font-size: 50px;
+}
+            /*--css spécifique aux liens des différents restaurants--*/
+.page_prec{
+ height: auto;
+ justify-content: space-center;
+ text-align: center;
+ padding: 30px;
+
+}
+.page_prec i{
+   padding-left: 30px;
+ position: absolute;
+}
+.page_precedente{
+    position: absolute;
+    font-size: 15px;
+    left: 30px;
+}
+.page_precedente i{
+  
+    height: 100%;
+    font-size: 45px;
+}
+            
+/*--------------fin_header---------*/
+/*-------bannière----
+.localisation{
+    background-color: rgb(219, 215, 215);
+    height: 160px;
+    border-top: 0.5rem solid rgb(180, 178, 178);  
+}
+#MapParis{
+    border:none;
+    background-color:rgb(219, 215, 215);
+    text-align: center;
+  width: auto;
+    font-weight: bolder;
+ }
+input, #MapParis{
+    font-size: 40px; 
+    margin-bottom:0px;
+    margin-right: 0px;
+    width: 30%;
+}
+.iconeloc {
+    width: 30%;
+    color: grey;
+    height: 100px;
+    text-align: center;
+ }
+ .iconeloc i{
+   font-size: 40px;
+ }
+  .iconeloc, .icone {
+    width: 50px;
+    margin-top: 0px;
+    height: 100%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+ }
+#Map{
+    margin-bottom: 20px;
+    height: 100px;
+    justify-content: center;
+ }
+.localisation, h2{
+    margin-bottom: 150px;
+    height: 50%;
+}
+.banniere{
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    height: 100%;
+    padding-bottom: 5px;
+    text-align: center;
+    padding-top: 0px;
+    background-color: rgb(242, 243, 242);
+}
+.banniere h1 {
+  
+font-size: 70px;
+    padding-bottom: 20px;
+ padding-left: 10%;
+ padding-right: 10%;
+    font-family: Roboto-Bold; 
+    margin-bottom: 60px;
+} 
+div .black{
+    background-color: yellow;
+}
+.banniere p{
+    font-size: 45px;
+    padding-left: 50px;
+    padding-right: 50px;
+  margin-bottom: 100px;  
+}
+.lighter {
+    font-family: Roboto-Light;
+}
+.exploration div{
+    background: linear-gradient(to left, rgba(147,86,220,.9),rgba(255,121,218,.9)););
+    color: white;
+       width: 400px;
+       font-weight: bolder; 
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-bottom: 100px;
+    font-size: 30px;
+    border-radius: 60px;
+   }
+/*---------sectionMain_page----
+.Main_page{
+    display: flex;
+    flex-direction: column;
+ }
+.main_page h2{
+    font-size: 70px;
+}
+#fonctionnement{
+    margin-left: 20px;
+    background-color: red;
+  margin-left: 0px;
+  height: auto;
+}
+.liste{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.liste{
+    width: 100%;
+}
+.flexBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.choix, .composition, .degustation {
+    border-radius: 60px;
+   background-color: greenyellow;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0px;
+      align-items: center;
+box-shadow: 5px 15px 5px rgb(200, 194, 194);
+}
+.choix, i{
+   padding-left: 10px;  
+}
+.un{
+    border-radius: 100px;
+    background-color: #9356DC;
+    font-size: 50px;
+    width: 80px;
+      padding-top: 10px;
+    margin-left: -30px;
+       color: white;
+     margin-right: 20px; 
+}
+.iconemobile{
+    color: gray;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+  padding-right: 30px;
+}
+.icone i:hover{
+    color: #9356DC;
+    background-color: rgb(246, 223, 227);
+}
+.iconecoeur i:hover{
+cursor: pointer;
+background-color: white;
+}
+.iconemobile i{
+    font-size: 65px;
+    margin-right: 20px;
+    padding-top: 0px;
+    padding-left:0px;
+    padding-right: 0px;
+}
+.iconemobile .icone{
+    margin-right: 30px;
+    width: 60px;
+    margin-top: 60px;
+}
+.fontSize{
+    font-size: 25px;
+}
+.black {
+    color: black;
+    background-color: rgb(238, 234, 234);;
+}
+.composition {
+      border-radius: 60px;
+    display: flex;
+    justify-content: flex-start;
+     background-color:  rgb(238, 234, 234);;
+    margin-bottom: 130px;
+    margin-left: 0px;
+    align-items: center;
+box-shadow: 5px 15px 5px rgb(200, 194, 194);
+}
+.composition, i{
+    padding-left: 10px;
+}
+.composition p{
+    margin-left: 20px;
+}
+.deux{
+    border-radius: 100px;
+    background-color: #9356DC;
+    font-size: 50px;
+    width: 80px;
+    height: 80px;
+    padding-top: 10px;
+    margin-left: -30px;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    margin-right: 20px;
+}
+.degustation{
+    border-radius: 60px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(238, 234, 234);
+    padding-bottom: 0px;
+    margin-left: 0px;
+background-color: ;
+    align-items: center;
+box-shadow: 5px 15px 5px rgb(200, 194, 194);
+}
+.iconestore{
+    display: flex;
+       color: gray;
+       justify-content: flex-start;
+}
+ .iconestore .icone{
+    height: 50%;
+       width: 65px;
+}
+.iconestore i{
+    padding-top: 0px;
+  margin-top: 60px;
+    font-size: 50px;
+padding-left: 0px;
+padding-right: 0px;
+}
+.iconestore p{
+  padding-top: 10px;
+}
+.iconelist {
+    color: gray;
+    display: flex;
+}
+.iconelist .icone{
+    margin-right: 65px;
+    width: 0px;
+    margin-top: 20px;
+}
+.iconelist i{
+    font-size: 55px;
+    margin-right: 0px;
+    margin-top: 35px;   
+}
+.iconelist, i{
+    margin-top: 20px;
+}
+.trois{
+    border-radius: 100px;
+    background-color: #9356DC;
+    font-size: 50px;
+    width: 80px;
+    height: 80px;
+    padding-top: 10px;
+    margin-left: -30px;
+    font-weight: bolder;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    margin-right: 20px; 
+}
+/*-----Section_Restaurants-----
+.Restaurants h2{
+    font-size: 70px;
+    margin-bottom: 50px;
+    width: 50%;
+}
+.Restaurants{
+    background-color: rgb(238, 234, 234);
+    flex-direction: column;
+  padding-right: 20px;
+  padding-left: 20px;
+    margin-top: 50px;
+}
+.Restaurants img{
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+}
+.text {
+    position: absolute;
+    top: 9%;
+    right: 4%;
+    color: #99e2d0;
+    background-color: #6bbba7;
+    padding-left: 20px;
+    padding-right: 15px;
+    font-size: 50px;
+    font-family: Roboto_Bold;
+    font-weight: bolder;
+}
+.iconecoeur{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding-right: 10px;
+position:relative;
+}
+.icone-vide i{
+    position:absolute;
+background-color: white;
+color: black;
+}
+.icone-plein, i{
+cursor: pointer; 
+}
+.icone-plein{
+    z-index: 1;
+  overflow: hidden;
+  color: rgb(212, 144, 212);
+}
+.icone-plein:hover{
+    cursor: pointer;
+    visibility: visible;
+}
+.icone-vide:hover{
+    visibility: hidden;
+}
+.iconecoeur i{
+  font-size: 50px;  
+ padding-top: 30px;
+ padding-left: 0px;
+ width: 100%;
+}
+.bold{
+    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 60px;
+    font-family: "Shrikhand";  
+}
+.lieux{
+  margin-top: 0px;
+    margin-left: 20px;
+    font-size: 50px;
+    width: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
+/*palette du goût
+.palette{
+    position: relative;
+}
+.palette_gout{
+    margin-bottom: 0px;
+}
+.gout {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    border-radius: 0px 0px 30px 30px;
+    background-color: white;
+   box-shadow:  5px 15px 5px rgb(228, 222, 222);
+}
+/*la note enchantée
+.note_enchantee{
+    position: relative;
+    border-radius: 20px;
+}
+.note_enchantee img{
+    height: 450px;
+}
+.note{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    border-radius: 0px 0px 30px 30px;
+    background-color: white;
+    box-shadow:  5px 15px 5px rgb(228, 222, 222);
+}
+/*--A la française--
+.francaise{
+    margin-bottom: 100px;
+    border-radius: 0px 0px 25px 25px;
+    background-color: white; 
+}
+.francaise img{
+    height: 450px;
+}
+.franc{
+    display: flex;
+    justify-content: space-between;  
+    margin-bottom: 0px;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow:  5px 15px 5px rgb(228, 222, 222);
+}
+/*--Le_délice_des_sens--
+.delice{
+    border-radius: 0px 0px 30px 30px;
+    padding-bottom: 100px;
+}
+.sens{
+    display: flex;
+    justify-content: space-between;     
+    margin-bottom: 100px;
+    border-radius: 0px 0px 25px 25px;
+    background-color: white;
+    box-shadow:  5px 15px 5px rgb(228, 222, 222);
+}
+/*--------------footer------
+/*footer*
+footer{
+    background-color: rgb(54, 48, 48);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 0px;
+    color: white;
+    padding-left: 20px;
+    height: auto;
+}
+.logoimg{
+    margin-bottom: 10px;
+    filter: invert(100%);
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.logoimg img{
+          width: 35%;
+}
+.iconerest{
+    color: gray;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.iconerest i{     
+    font-size: 40px;
+    margin-right: 0px;
+    padding-top: 30px;
+    color:white
+}
+.iconerest, i{
+    margin-top: 20px;
+}
+.iconerest .icone{
+    margin-right: 0px;
+    width: 60px;
+    margin-top: 20px;
+}
+.info {   
+    color: white;
+    font-size: 40px;
+    background-color:   rgb(54, 48, 48);;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+}
+.info p{
+   font-size: 45px;
+   background-color:   rgb(54, 48, 48);;
+   margin-top: 20px;
+   margin-bottom: 0px;
+   font-weight: bolder;
+   margin-left: 0px;
+}
+.partenaire{
+    color:white;
+    width: 100%;
+    font-size: 40px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+}
+.partenaire p{
+    font-size: 45px;
+    margin-top: 20px;
+    margin-bottom:0px;
+    margin-left: 0px;
+    font-weight: bolder;
+    width: 100%;
+}
+.iconehand {
+width: 75px;
+}
+.ionehand, .icone{
+    margin-right: 0px;
+    width: 56px;
+    margin-top: 20px;
+}
+.iconerest i{
+margin-top: 5px;
+    }
+ .iconerest, i{
+    font-size: 50px;
+    padding-top: 0px;
+    margin-top: 0px;
+    text-align: center;
+}
+.iconehand i{
+    font-size: 35px; 
+     padding-top: 25px;  
+     margin-top: 0px; 
+     text-align: center;
+}
+.mentions_legales{
+    margin-top: 10px;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.contact{
+    margin-top: 10px;
+    font-size: 50px;
+    margin-bottom: 10px;
+    }
+/*=========css spécifique aux liens des différents restaurants======
+
+/*--Restaurants--
+.Restaurants_gout{
+    background-color: rgb(238, 234, 234);
+    padding-bottom: 70px;
+}
+.Restaurants_gout h2{
+    font-size: 70px;
+    margin-bottom: 50px;
+    width: 50%;
+}
+.Restaurants_gout img{
+    width: 100%;
+}
+.Menu .titre{
+    font-size: 25px;
+    font-family: Shrikhand;
+}
+.titre h2{
+    width: 80%;
+    font-size: 70px;
+    padding-left: 30px;
+}
+.iconecoeur_gout i{
+padding-bottom: 0px;
+}
+.iconecoeur_gout{
+    padding-right: 20px;
+    margin-right: 10px;
+    height: 50%;
+    margin-bottom: 25%;
+}
+.iconecoeur_gout, i{
+    padding-right: 50px;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 30px;
+    font-size: 70px;
+ height: auto;
+ padding-top: 52px;
+}
+/*--entrées-
+.Menu{
+    border-radius: 20px;
+    position:relative;
+    background-color: rgb(238, 234, 234);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 80px;
+}
+.titre{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 70px 70px 0px 0px;
+    padding-top: -50px;
+    margin-top: 0px;
+  background-color: rgb(238, 234, 234);
+    position: relative;
+    bottom:100px;
+    margin-bottom: -250px;
+    padding-bottom: 50px;
+}
+.titre h2{
+    font-family: Shrikhand;
+}
+.trait_en_dessous{
+    border-bottom: 1px solid;
+    width: 100px;
+    font-size: 50px;
+}
+.validate{
+height: 150px;
+width: 150px;
+top:0;
+right: 0;
+ position: absolute;
+ transform: translateX(100%);
+ transition: .1s;
+}
+.entrees:hover .validate{
+    transform: translateX(0%);
+}
+.checkedicone, i{  
+width: 100%;
+height: 100%;
+text-align: center;
+padding-left: 25%;
+padding-top: 25%;
+}
+.Menu:hover {
+  cursor: pointer;
+}
+.Menu_entrees p{
+    font-size: 50px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.Menu_entrees .entrees{
+    margin-bottom: 60px;  
+}
+.entrees{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 40px;
+    background-color: white;
+    padding-left: 30px;
+    position:relative;
+ animation-name: deroulant;
+ animation-duration: 5s;
+ animation-delay: 0.5s;
+    margin-bottom: 40px;
+    font-family: Roboto; 
+    position: relative;
+}
+/*--plats--
+.Menu_plats p{
+    font-size: 50px;
+}
+.Menu_plats .plats{
+    margin-bottom: 60px;
+}
+.plats{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 40px;
+    background-color: white;
+    padding-left: 20px;
+    position:relative;
+    animation-name: deroulant;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    margin-right: 0px;
+    font-family: Roboto;
+}
+/*--desserts--
+.dessert{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 40px;
+    background-color: white;
+    padding-left: 30px;
+   margin-bottom: 50px;
+    font-family: Roboto;
+}
+.prix{
+    font-weight: bolder;
+    margin-top: 60px;
+    margin-right: 30px;
+    font-size: 45px;
+    display: flex;
+}
+h3{
+    margin-bottom: 0px;
+    margin-top: 11px;
+}
+.detail{
+    margin-top: 20px;
+margin-bottom: 20px;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0px;
+}
+.detail p{
+margin-bottom: 5px;
+margin-top: 0px;
+font-size: 40px;
+}
+.detail h3{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.commander{
+    display: flex;
+    justify-content: center;
+}
+.commande a{
+  color:white
+}
+.commande {
+   height: auto;
+ padding-top: 4%;
+ padding-bottom: 4%;
+ padding-left: 15%;
+ padding-right: 15%;
+ width: 500px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    border-radius: 45px;   
+    background-color: #9356DC;    
+}
+
+#IdCheckbox{
+    height: 130px;
+    width: 50px;
+    position: relative;
+}
+.labelCheckBox{
+    width: 150px;
+}
+/*--animation--
+    @keyframes animation{
+        from {
+            margin-left: 100%;
+            width: 300%;
+          }
+          75% {
+            font-size: 300%;
+            margin-left: 25%;
+            width: 150%;
+          }
+        
+          to {
+            margin-left: 0%;
+            width: 100%;
+          }
+    }
+    @keyframes animcoeur {
+      100%{
+        color:purple;
+      }
+    }
+    @keyframes deroulant{
+        0% {
+            transform:translateY(200px);
+        opacity :0;       
+       }
+        100% {
+            transform:translateY(0px);
+        opacity :1;       
+      } 
+    }  
+@keyframes animtest{
+    0%{
+        color: green;
+    }
+    50%{
+        color:red;
+    }
+    100%{
+        color: blue;
+    }
+}
+label{
+   
+    border-radius: 30px 0px 30px;
+}
+.labelCheckBox{
+    transition-timing-function: ease-out;
+}
+    @media  screen and (min-width: 800px){
+.w6Cent{
+    width: 600px;
+}
+ .choix{
+   margin-bottom: 130px; 
+ }
+    }
+
+@media  screen and (min-width: 1000px){
+ /*===css s'applique uniquement aux écrans dont la largeur est supérieure ou égale à 1000px===
+
+ .flexDirection{
+    flex-direction:column;
+    height: auto;
+}
+ .page_precedente i{
+     font-size: 30px;
+     padding-top: 0px; 
+ }
+ .page_precedente, i{
+     padding-top: 30px;
+ }
+ .iconeloc i{
+font-size: 35px;
+    padding-top: 10px;
+ }
+ .localisation{
+     padding-top: 0px;
+ }
+ #MapParis{
+text-align: left;
+margin-top: 20px;
+padding-bottom: 25px;
+ }
+ div .exploration{
+     font-size: 35px; 
+ }
+.iconemobile .icone{
+ margin-top: 30px;
+}
+.iconemobile i{
+    font-size: 40px;
+padding-left: 0px;
+}
+.iconelist .icone{
+margin-top: 10px;
+}
+.un{
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+}
+ .iconelist i{
+    font-size: 35px;
+ margin-top: 0px;
+padding-top:0px;
+    margin-left: 15px;
+ }
+ .iconestore i{
+    font-size: 35px;
+    padding-top:0px;
+    margin-bottom: 60px;
+   
+ }
+ .deux{
+    font-size: 30px;
+    width: 50px;
+    height: 50px; 
+ }
+ .iconelist i{
+     margin-top: 0px;
+ }
+    .logoimg{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 60%;
+ }
+ .trois{
+    font-size: 30px;
+    width: 50px;
+    height: 50px;    
+ }
+ .container_restaurant{
+    width: 80%;  
+   }
+.info{
+    width:320px;
+    margin-top: 20px;
+}
+.info p{
+    font-size: 20px;
+    padding-top: 20px;
+   margin-right: 50px;
+}
+.partenaire{
+ width: 100%;
+}
+.partenaire p{
+    font-size: 20px;
+padding-left: 0px;
+}
+.iconerest i{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.iconehand i{
+    font-size: 20px;
+    margin-top: 0px;
+   width: 70px;
+}
+.mentions_legales{
+    font-size: 20px;
+}
+.contact{
+    font-size: 20px;
+}
+}
+@media  screen and (min-width: 1200px) {
+/*============================css s'appliquera aux écrans de 1200px minimum====================
+.logo img{
+    width: 300px;
+}
+input, #MapParis{
+    font-size: 30px;
+    height: 40%;
+width: 20%;
+}
+
+.iconeloc i{
+    font-size: 25px;
+    margin-top: 0px;
+}
+.iconeloc, .icone{
+    margin-top: 15px;
+    margin-right: 0px;
+}
+.bannere p {
+    font-size: 30px;
+ 
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+}
+div .exploration{
+  width: 25%;
+ margin-left: 40%;
+ margin-right: 45%;
+ padding-top: 20px;
+ padding-bottom: 20px;
+}
+.banniere{
+    margin-bottom: 0px;
+}
+.main_page h2{
+    font-size: 50px;
+}
+.localisation, h2{
+    margin-bottom: 50px;
+}
+.banniere h1{
+    margin-bottom:20px;
+    font-size: 60px;
+}
+.Main_page h2{
+    font-size: 50px;  
+}
+/*---fonctionnement--
+#fonctionnement {
+    margin-left: 10px;
+}
+.titre{
+    border-radius: 20px 20px 0px 0px;
+    padding-left: 0px;
+    bottom:20px;
+height: 50px;
+    margin-left: 0px;
+}
+.titre_fonctionnement{
+    font-size: 40px;
+ margin-left: 20px;
+}
+.titre_fonctionnement h2:hover{
+    animation: animtest 2s;
+}
+.titre_restaurant h2{
+    font-size: 40px;
+}
+.choix{
+   background-color: red;
+margin-left: 10px;
+    margin-bottom: 0px;
+    justify-content: center;
+ width: 400px;  
+}
+.composition{
+    margin-top: 60px;
+     width: 400px;
+     height: 80px;
+           margin-bottom: 0px;
+           justify-content: center;
+   }
+.degustation{
+    margin-top: 60px;
+width: 400px;
+margin-right: 10px;
+height: 80px;
+     margin-bottom: 0px;
+}
+.degustation p{
+margin-top: 20px;
+}
+.iconemobile{
+padding-top: 0px; 
+}
+.iconemobile i{ 
+    padding-top: 50px;
+}
+.iconemobile .icone{
+  width: 25px;
+ margin-right: 20px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+.iconemobile, p{
+  margin-right: 20px;
+}
+.un{
+   font-size: 20px;
+   height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    margin-top: 60px;
+    overflow: hidden;
+    margin-left: -30px; 
+}
+.iconemobile i{
+    font-size: 25px;
+    margin-top: 0px;
+    padding-top: 10px;
+    margin-left: 0px;
+    padding-bottom: 15px;
+    overflow: hidden;
+    width: 25px;
+}
+.iconelist .icone{
+    font-size: 25px;
+    margin: 0px;
+   margin-right: 20px;
+    padding-left: 0px;
+    width: 30px;
+    height: auto;
+}
+.iconelist i{
+    margin: 0px;
+    height: auto;
+    padding: 0px;
+}
+.iconelist{
+  height: 60%;
+margin-bottom: 10px;
+}
+.iconelist i{
+    margin-top: 0px;
+    width: 40px;
+    padding-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    width: 25px;
+}
+.deux{
+    font-size: 20px;
+    height: 40px;
+     width: 40px;   
+     margin-top: 0px;
+     overflow: hidden;
+     margin-left: -70px;
+}
+.trois{
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+     overflow: hidden;
+     margin-left: -20px;
+     margin-top: 0px;
+}
+.iconerest .icone{
+    font-size: 20px; 
+    width: 30px;
+padding-right: 0px;
+}
+.iconestore{
+    color: gray;
+    font-size: 30px;
+  height: 60px;
+  margin-left: 0px;
+}
+.iconestore .icone{
+width: 30px;
+margin-right: 20px;
+margin-top: 15px;
+}
+.iconestore p{
+  padding-top: 10px;
+padding: 0px;
+height: 60%;
+}
+.iconestore i{
+  font-size: 20px;
+  font-size: 25px;
+  margin-top: 0px;
+  padding-top: 10px;
+  margin-left: 0px;
+  padding-bottom: 15px;
+  overflow: hidden;
+  width: 30px;
+}
+.degustation .black{
+   width: 100%;
+   margin-right: 0px;
+   margin-left: 0px;
+  margin-top: 15px;
+padding-top: 10px;
+}
+.lieux{
+    width: 100%;
+}
+/*--footer--
+.iconerest{
+    height: 75%;
+    margin-left: 10px;
+}
+.iconerest i{
+    font-size: 30px;
+    padding-left: 0px;
+}
+.iconerest .icone{
+    margin-top: 0px; 
+}
+section, .Restaurants{
+    align-items: center;
+    padding-bottom: 15px;
+}
+.container_restaurant{
+    display: flex;
+    justify-content: space-between;
+}
+.palette{
+    width: 100%;
+    height:300px;
+ margin-right: 60px;
+    margin-bottom: 0px;
+}
+.palette img{
+    height: 70%;
+}
+.note_enchantee{
+   width: 100%; 
+ height: 300px;
+ margin-right: 60px;
+ margin-bottom: 0px;
+}
+.note_enchantee img{
+    height: 70%;
+}
+.text{
+    width: 15%;
+    font-size: 12px;
+    padding-left: 0px; 
+}
+.bold{
+  width: 100%; 
+  font-size: 20px;
+  margin-left: 5px;
+}
+.lieux{
+    width: 50%;
+    font-size: 20px;
+    margin-left: 5px;
+}
+.iconecoeur, .icone{
+    width: 30px;
+}
+.iconecoeur i{
+    font-size: 20px;
+    padding-top: 20px;
+   height: auto;
+   margin-top: 30px;
+   padding-right: 0px;
+}
+.francaise{
+    width: 100%;
+ margin-right: 60px;
+  height: 300px;
+}
+.francaise img{
+   height: 70%;
+}
+.franc .lieux{
+    width: 100%; 
+}
+.franc, .lieux{
+    margin-bottom: 0px;
+}
+.delice{
+    width: 100%;
+   height: 300px;
+}
+.delice img{
+    height: 100%;
+}
+.container_restaurant{
+    width: 100%;
+}
+.delice img{
+    height: 210px;
+}
+.delice .lieux{
+    width: 100%;
+}
+  .iconecoeur_gout{
+    height:100%;
+  }
+.iconecoeur_gout, .icone{
+    width: 30px;
+    padding:0px;
+    margin:0px;
+    height: auto;
+  }
+  .iconecoeur_gout, i{
+      margin-top: -35px;
+  }
+.iconecoeur, i{
+    font-size: 20px;
+margin-top: -20px;
+     margin-left: 0px;
+  }
+  .page_precedente{
+    margin-top: 0px;
+  }
+  .page_precedente i{
+    width: 60%;
+    padding-top: 0px;
+  }
+  .page_prec{
+      height: 30% ;
+  }
+  .Restaurants{
+      width: 100%;
+      padding-bottom: 20px;
+}
+.Restaurants_gout{
+    background-color: rgb(238, 234, 234);
+}
+  .titre h2{
+     width: 100%;
+     font-size: 18px;
+     margin-bottom: 0px;
+}
+  .Menu{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.Menu_gout{
+   align-items: flex-start;
+     display: flex;
+justify-content: space-between;
+width: 100%;
+height: auto;
+background-color: rgb(238, 234, 234);
+ }
+.palette_gout img{
+    width: 300px;
+    padding-top:30px;
+    border-radius: 0px;
+    padding-left: 5px;
+}
+.Menu{
+    border-radius: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.Menu_entrees p{
+  font-size: 20px;
+  margin-top: 30px;
+    margin-bottom: 50px;
+   font-weight: bolder;
+    margin-left: 5px;
+    margin-right: 20px;
+text-align: center;
+ }
+ .plats{
+   width: 100%;
+    height: auto;
+ }
+.Menu_plats p{
+    font-size: 20px;
+  margin-top: 30px;
+    margin-bottom: 50px;
+   font-weight: bolder;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+.Menu_dessert{
+    padding-left: 10px;
+}
+.Menu_dessert p{
+    font-size: 20px;
+    margin-top: 30px;
+      margin-bottom: 60px;
+     font-weight: bolder;
+}
+.entrees{
+    margin-right: 40px;
+  width:100%;
+    height: auto;
+}
+.dessert{
+    width: 100%;
+}
+.detail{
+   padding-top: 0px;
+   width: 100%;
+}
+.detail h3{
+    font-size: 14px;
+font-family: Roboto-Bold;
+    margin-bottom: 10px;
+    margin-left: 0px;
+ }
+.detail p{
+    font-size: 11.9px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  margin-left: 0px;
+    padding-bottom: 0px;
+}
+.prix{
+    font-size: 18px;
+ margin-top: 40px;
+ margin-bottom: 20px;
+ margin-left: 10px;
+}
+.commander{
+    justify-content: center;
+}
+.commande{
+width: 20%;
+    font-size: 20px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-radius: 30px;
+    background-color: #9356DC;  
+  }
+.logoimg{
+ width: 30%;
+}
+.info {
+  width: 300px;
+}
+.info p{
+    font-size: 20px;
+   margin-right: 20px;
+}
+.iconerest i{
+    font-size: 20px;
+    margin-left: 0px;
+}
+.iconehand i{
+    font-size: 20px;
+padding-left: 10px;
+  width: 40px;
+    padding-top: 20px;
+}
+.partenaire{
+    width: 280px;
+    font-size: 15px;  
+}
+.partenaire p{
+    margin-left: 0px;
+    padding-left: 0px;
+    font-size: 20px;
+    margin-left:10px;
+    margin-right: 0px;
+}
+.mentions_legales{
+    font-size: 22px;
+}
+.contact p{
+    font-size: 20px;
+}
+.contact{
+    font-size: 20px;
+}
+}
