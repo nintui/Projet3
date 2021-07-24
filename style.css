@@ -19,6 +19,7 @@ body, html{
   margin:0px;
     font-family: Roboto, sans-serif;
     scroll-behavior: smooth;
+    font-size: 100%;
 }
 /*----
 img{
@@ -28,12 +29,17 @@ img{
 p, a{
     text-decoration: none;
 }
-.flexCenter{
+/*----*/
+.flexCenterAlign{
     display:flex;
     justify-content: center;
     align-items: center;
 }
-
+.flexCenter{
+    display: flex;
+    justify-content: center;
+}
+/*----
 .flexMargeLeft{
  background-color: green;
 }
@@ -53,10 +59,8 @@ p, a{
 header{
  position: relative;
  padding: 60px;
-
 }
 .logo{
-
   font-size: 50px;
 }
             /*--css spécifique aux liens des différents restaurants--*/
@@ -65,7 +69,6 @@ header{
  justify-content: space-center;
  text-align: center;
  padding: 30px;
-
 }
 .page_prec i{
    padding-left: 30px;
@@ -73,22 +76,37 @@ header{
 }
 .page_precedente{
     position: absolute;
-    font-size: 15px;
+    font-size: 1.25rem;
     left: 30px;
 }
-.page_precedente i{
-  
+.page_precedente i{ 
     height: 100%;
-    font-size: 45px;
+    font-size: 2rem;
 }
             
 /*--------------fin_header---------*/
-/*-------bannière----
+/*-------bannière----*/
 .localisation{
-    background-color: rgb(219, 215, 215);
+   /* background-color: rgb(219, 215, 215);
     height: 160px;
-    border-top: 0.5rem solid rgb(180, 178, 178);  
+    border-top: 0.5rem solid rgb(180, 178, 178);  */
 }
+.banniere{
+font-size: 2rem;
+    background-color: #979393;
+    position:relative;
+    padding: 20px 20px;
+    border-top: 5px solid #dddcdc;
+
+ 
+}
+.localisation_icone{
+    margin-right: 30px;
+}
+.localisation_texte{
+    font-weight: bolder;
+}
+/*--
 #MapParis{
     border:none;
     background-color:rgb(219, 215, 215);
@@ -127,16 +145,7 @@ input, #MapParis{
     margin-bottom: 150px;
     height: 50%;
 }
-.banniere{
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    height: 100%;
-    padding-bottom: 5px;
-    text-align: center;
-    padding-top: 0px;
-    background-color: rgb(242, 243, 242);
-}
+
 .banniere h1 {
   
 font-size: 70px;
