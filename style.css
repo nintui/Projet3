@@ -129,6 +129,7 @@ font-weight: bolder;
      padding-bottom: 25px;
      margin-bottom: 100px;
   border-radius: 60px;
+  font-family: "Roboto";
 }
 .exploration a{
     text-decoration: none;
