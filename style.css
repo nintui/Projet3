@@ -12,7 +12,6 @@
 @font-face {
     font-family: "Shrikhand";  
     src: url(/typo/Shrikhand-Regular.ttf);
-
 }
 /*-----balises génériques---*/
 body, html{
@@ -93,18 +92,49 @@ header{
 }
 .banniere{
 font-size: 2rem;
-    background-color: #f3f3f3;
+    background-color: #e7e1e1;
     position:relative;
     padding: 20px 20px;
     border-top: 5px solid #dddcdc;
-
- 
 }
 .localisation_icone{
     margin-right: 30px;
 }
 .localisation_texte{
     font-weight: bolder;
+}
+.reservation{
+background-color: #f3f3f3;
+flex-direction: column;
+text-align: center;
+font-size: 1.5rem;
+font-weight:bolder;
+padding-bottom: 50px;
+}
+.reservation_texte{
+font-weight: bolder;
+}
+.lighter{
+    font-weight: lighter;
+ 
+}
+.exploration{
+    font-weight: bold;
+    background: linear-gradient(to left, rgba(147,86,220,.9),rgba(255,121,218,.9));
+        text-decoration: none;
+        font-size: 1.15rem;
+        width: 250px;
+        font-weight: bolder; 
+     padding-top: 25px;
+     padding-bottom: 25px;
+     margin-bottom: 100px;
+  border-radius: 60px;
+}
+.exploration a{
+    text-decoration: none;
+    color:white;
+  
+      
 }
 /*--
 #MapParis{
