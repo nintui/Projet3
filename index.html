@@ -10,133 +10,132 @@
 </head>
 <body>
    <header><!--header-->
-      <div class="en_tete flexCenter">
+      <div class="en_tete">
        
-         <div class="logo flexCenterAlign"><img src="img/ohmyfood.png" alt="photo du logo Ohmyfood"></div>
+         <div class="logo"><img src="img/ohmyfood.png" alt="photo du logo Ohmyfood"></div>
      </div> 
    </header> 
-  <div class="banniere flexCenter"> <!--bannière-
-              
-      <div class="localisation flexCenter"> 
-            <div class="iconeloc"> <div class="icone">-->
-               <i class="fas fa-map-marker-alt localisation_icone"></i><!--</div></div>
-             <input name="localisation" type="text" id="MapParis" value="Paris, Belleville"/>
-      </div>-->
-      <span class="localisation_texte">Paris, Belleville</span>
-            </div>
-            
-           <div class="reservation flexCenterAlign">
-            <h2 class="reservation_texte flexCenterAlign">Réserver le menu qui 
+  <div class="banniere"> <!--bannière-->
+      <div class="banniere_map">
+         <div class="banniere_icone"><i class="fas fa-map-marker-alt"></i></div> 
+          <div class="search"><input  name="localisation_texte" type="text" value="Paris, Belleville"></div> 
+      </div>
+      <div class="banniere_reservation">
+            <h2>Réserver le menu qui 
                <br> convient</h2>
-            <p class="lighter">Découvrez des restaurants d'exception sélectionnés par nos soins</p>
-            <div class="exploration flexCenter "><div class="gras "><a href=#>Explorer nos restaurants</a> </div></div></div></div>
-                  
-   </div><!--fin_bannière--
+            <p>Découvrez des restaurants d'exception,<br> sélectionnés par nos soins</p> </div> 
+      <div class="exploration"><div class="gras "><a href=#>Explorer nos restaurants</a> </div></div>             
+   </div>
+ 
   
    <section class="main_page">
-          <div class="titre_fonctionnement flexStart">
-            <h2>Fonctionnement</h2>
+
+          <div class="fonctionnement">
+            <h2 class="titre">Fonctionnement</h2>
+            <ol class="fonctionnement_liste">
+               <li  class="fonctionnement_choix"> <span class="liste">1</span> <i class="fas fa-mobile-alt fonctionnement_icone"></i><a href="#"><span class="black">Choisissez un restaurant</span> </a></li>
+<li class="fonctionnement_choix Choix"><span class="liste">2</span> <i class="fas fa-list-ul fonctionnement_icone"></i>  <a href="#"><span class="black">Composez votre menu</span> </a></li>
+<li class="fonctionnement_choix"><span class="liste">3</span><i class="fas fa-store fonctionnement_icone"></i>  <a href="#"><span class="black">Dégustez au restaurant</span> </a></li>
+            </ol>
           </div>             
-          <div id="fonctionnement flexBetween"><!--fonctionnement--
-               <div class="liste flexMargeLeft flexBetween flexDirection">                  ">  
-               <div class="choix height fontSize w6Cent">
-                  <div class="un">1</div>
-                  <div class="iconemobile fontSize">
-                        <div class="icone"><i class="fas fa-mobile-alt"></i></div>
-                        <a href="#"><p class="black">Choisissez un restaurant</p> </a>
-                  </div>
-               </div>   
-                  
-               <div class="composition height fontSize w6Cent">
-                  <div class="deux">2</div>
-                     <div class="iconelist">
-                          <div class="icone"><i class="fas fa-list-ul"></i></div>
-                         <a href=""><p class="black">Composez votre menu</p></a>
-                     </div>
-               </div>
-                     
-               <div class="degustation height fontSize w6Cent">
-                  <div class="trois">3</div>
-                   <div class="iconestore"> 
-                           <div class="icone"><i class="fas fa-store"></i></div>
-                        <a href="#"><p class="black"> Dégustez au restaurant</p></a>
-                  </div>
-               </div>
-            </div>   
-                  </div>     <!--fin fonctionnement--
-             
+    
+            
    </section>
    
 
 
 
-   <section class="Restaurants"><!--restaurants--
-      <div class="titre_restaurant"><h2>Restaurants</h2>></div>  
-      <div class= "container_restaurant"><!--La_palette_du_goût--
-         <div class="palette"> <a href="palette_du_gout.html"><img src="img/La_Palette_du_goût.jpg" alt=""></a>
-            <div class="text">Nouveau</div>
-            <div class="gout">
-                  <div><p class="bold"> palette du goût</p><p class="lieux">Ménilmontant </p> </div>
+   <section class="Restaurants"><!--restaurants-->
+      <h2 class="titre">Restaurants</h2> 
+      <div class= "container_restaurant">
+         <div class="restaurant_detail">  <!--La_palette_du_goût-->
+            <a href="palette_du_gout.html"><img class="container" src="img/La_Palette_du_goût.jpg" alt=""></a>
+          <span class="text">Nouveau</span>
+        
+               <div class="description">
+                  <div><p class="bold">La palette du goût</p><p class="lieux">Ménilmontant </p> </div>
+                     
                   <div class="iconecoeur">
-                     <div class="icone-vide"><i class="far fa-heart"></i></div>
-                     <div class="icone-plein"><i class="fas fa-heart"></i></div>
-                  
-                   
-                  </div>
-            </div>
-         </div>
+                     <div  class="iconecoeur_vide"><i class="far fa-heart"></i></div>
+                     <div class="iconecoeur_plein">    <i class="fas fa-heartn"></i></div>
+                  </div>   <!--fin iconecoeur-->
+               </div>   <!--fin description-->
+               
+         </div><!--fin de la palette du gout-->
+         
   
-         <!--La_note_enchantée--
-         <div class="note_enchantee"> <a href="note_enchantée.html"><img src="img/La_note_enchantée.jpg" alt=""></a>
-               <div class="text">Nouveau</div>
-                <div class="note">
-                   <div><p class="bold">La note enchantée</p><p class="lieux">Charonne </p></div>
-                <div class="iconecoeur">
-                  <div class="icone-vide"><i class="far fa-heart"></i></div>
-                  <div class="icone-plein"><i class="fas fa-heart"></i></div>
-             </div>
-            </div>
-         </div>
+        
+         <div class="restaurant_detail">  <!--La_note_enchantée-->
+            <a href="note_enchantée.html"><img class="container" src="img/La_note_enchantée.jpg" alt=""></a>
+            <span class="text">Nouveau</span>
+           
+               <div class="description">
+                     <div><p class="bold">La note enchantée</p><p class="lieux">Charonne  </p> </div>
+                     
+                     <div class="iconecoeur">
+                        <div  class="iconecoeur_vide"><i class="far fa-heart"></i></div>
+                      <div class="iconecoeur_plein">    <i class="fas fa-heartn"></i></div>
+                     </div>   <!--fin iconecoeur-->
+                     </div>   <!--fin description-->
+               
+               </div> <!--fin de note enchantée-->
+            
+        
+      
+      
+        <div class="restaurant_detail">  <!--A_la_française-->
+         <a href="A_la_française.html"><img class="container" src="img/A_la_française.jpg" alt=""></a>
      
-
-       <!--A_la_française>--
-         <div class="francaise"> <a href="A_la_française.html"><img src="img/A_la_française.jpg" alt=""></a>
-            <div class="franc">
+        
+            <div class="description"> <!--description-->
                   <div><p class="bold">A la française</p><p class="lieux">Cité Rouge </p> </div>
-                  <div class="iconecoeur">
-                     <div class="icone-vide"><i class="far fa-heart"></i></div>
-                     <div class="icone-plein"><i class="fas fa-heart"></i></div>
-                  </div>
-            </div>
-          </div>
+                  
+                     <div class="iconecoeur"><div  class="iconecoeur_vide"><i class="far fa-heart"></i></div>
+               <div class="iconecoeur_plein">    <i class="fas fa-heartn"></i></div>
+            </div>   <!--fin iconecoeur-->
+                  </div>   <!--fin description-->
+               
+          
+         </div><!--fin_française-->
+      
 
-         <!--Le_délice_des_sens--
-         <div class="delice"> <a href="le_délice_des_sens.html"><img src="img/Le_délice_des_sens.jpg" alt=""></a>
-         <div class="sens">
-            <div><p class="bold">Le délice des sens</p><p class="lieux">Foie-Méricourt </p> </div>
-            <div class="iconecoeur">
-               <div class="icone-vide"><i class="far fa-heart"></i></div>
-                     <div class="icone-plein"><i class="fas fa-heart"></i></div>
-            </div>
-         </div>
-      </div>
-   </div>
+        
+         
+        <div class="restaurant_detail">  <!--Le_délice_des_sens-->
+         <a href="le_délice_des_sens.html"><img class="container" src="img/Le_délice_des_sens.jpg" alt=""></a>
+     
+        
+            <div class="description">
+                  <div><p class="bold">Le délice des sens</p><p class="lieux">Folie-Méricourt  </p> </div>
+                  
+                     <div class="iconecoeur"><div  class="iconecoeur_vide"><i class="far fa-heart"></i></div>
+               <div class="iconecoeur_plein">    <i class="fas fa-heartn"></i></div>
+            </div>    <!--fin iconecoeur-->
+                  </div>    <!--fin des_sens-->
+        </div>     <!--fin delice-->       
+          
+      </div> <!--fin container-restaurants-->
+        
+       
    </section>
 
 
    <footer>
-         <div class="logoimg"><img src="img/ohmyfood.png" alt="photo du logo Ohmyfood">
+        <div class="logoimg"><img src="img/ohmyfood.png" alt="photo du logo Ohmyfood">
          </div>
-         <div class="info">
-            <div class="iconerest"><i class="fas fa-utensils"></i></div>
-            <p>Proposer un restaurant </p>
+         <div class="footer_info">
+            <div class="info_partenaire">
+               <div class="info_icone"><i class="fas fa-utensils"></i></div>
+               <p>Proposer un restaurant </p>
+            </div>
+            <div class="info_partenaire">
+               <div class="info_icone"><i class="fas fa-hands-helping"></i></div>
+               <p> Devenir un partenaire</p>
+            </div>
+            <div class="mentions_contact">mentions légales</div>
+            <div class="mentions_contact">Contact</div>
          </div>
-         <div class="partenaire">
-            <div class="iconehand"><i class="fas fa-hands-helping"></i></div>
-            <p> Devenir un partenaire</p>
-         </div>
-      <div class="mentions_legales">mentions légales</div>
-      <div class="contact">Contact</div> 
-   </footer>-->
-</body>-
-</html>
+   </footer>
+   
+   </body>
+   </html>
